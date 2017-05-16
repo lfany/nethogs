@@ -7,3 +7,6 @@ TAGS
 nethogs.project
 libnethogs.so.*
 libnethogs.a
+## for clion
+.idea/
+cmake-build-debug/

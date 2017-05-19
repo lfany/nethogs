@@ -9,6 +9,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 #message(${PROJECT_BINARY_DIR})
 #message(${CMAKE_MAKE_PROGRAM})
 #message(STATUS ${WIN32})
-add_custom_target(nethogs ALL COMMAND ${CMAKE_MAKE_PROGRAM} -C ${PROJECT_SOURCE_DIR}
-        CLION_EXE_DIR=${PROJECT_BINARY_DIR})
+set(PROJECT_EXEC_DIR ${PROJECT_SOURCE_DIR}/src)
+add_custom_target(nethogs ALL COMMAND ${CMAKE_MAKE_PROGRAM} --debug -C ${PROJECT_SOURCE_DIR}
+        CLION_EXE_DIR=${PROJECT_EXEC_DIR})
 #add_executable(nethogs ${nethogs_SOURCE_DIR}/src/nethogs)
